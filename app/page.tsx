@@ -1,21 +1,32 @@
-import { BlogPosts } from 'app/components/posts'
+import { BlogPosts } from "app/components/posts";
 
 export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        Marc Anthony Card
       </h1>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        I'm a developer living in Brooklyn, NY. Currently VP of Product
+        Technology & Integrations at{" "}
+        <a
+          className="underline"
+          href="https://www.logicalposition.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Logical Position
+        </a>
+        , a digital advertising agency.
+      </p>
+      <p className="mb-4">
+        Since joining LP I've had the pleasure to start and build our agencies
+        Data Feed, Web Analytics, Integrations Development, Advanced Product
+        Reporting, and Business Intelligence teams.
       </p>
       <div className="my-8">
         <BlogPosts />
       </div>
     </section>
-  )
+  );
 }
