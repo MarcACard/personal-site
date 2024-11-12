@@ -24,12 +24,13 @@ export default function Page() {
         Analytics, Integrations Development, Advanced Product Reporting, and
         Business Intelligence teams.
       </p>
-      <p className="mb-4">
+      <p className="mb-8">
         I'm an avid Sci-fi reader and a coffee enthusiast - send me all your
-        book and roast recs.
+        book and coffee roast recs.
       </p>
+      <hr />
       <div className="my-8">
-        {/* <BlogPosts /> */}
+        <BlogPosts />
       </div>
     </section>
   );
