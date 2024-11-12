@@ -20,12 +20,16 @@ export default function Page() {
         , a digital advertising agency.
       </p>
       <p className="mb-4">
-        Since joining LP I've had the pleasure to start and build our agencies
-        Data Feed, Web Analytics, Integrations Development, Advanced Product
-        Reporting, and Business Intelligence teams.
+        Since joining LP I've started and built our agencies Data Feed, Web
+        Analytics, Integrations Development, Advanced Product Reporting, and
+        Business Intelligence teams.
+      </p>
+      <p className="mb-4">
+        I'm an avid Sci-fi reader and a coffee enthusiast - send me all your
+        book and roast recs.
       </p>
       <div className="my-8">
-        <BlogPosts />
+        {/* <BlogPosts /> */}
       </div>
     </section>
   );
