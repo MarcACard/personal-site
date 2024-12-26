@@ -7,8 +7,12 @@ export default function Page() {
         Marc Anthony Card
       </h1>
       <p className="mb-4">
-        I'm a developer living in Brooklyn, NY. Currently VP of Product
-        Technology & Integrations at{" "}
+        I'm a developer living in Brooklyn, NY 🗽. Currently diving into{" "}
+        <span className="line-through">rabbit holes</span> black holes and
+        building what piques my curiosity.
+      </p>
+      <p className="mb-4">
+        Previously, I served as VP of Product Technology &amp; Integrations at{" "}
         <a
           className="underline"
           href="https://www.logicalposition.com/"
@@ -17,12 +21,9 @@ export default function Page() {
         >
           Logical Position
         </a>
-        , a digital advertising agency.
-      </p>
-      <p className="mb-4">
-        Since joining LP I've started and built our agencies Data Feed, Web
-        Analytics, Integrations Development, Advanced Product Reporting, and
-        Business Intelligence teams.
+        , a digital advertising agency. During my time there, I founded the Data
+        Feed, Web Analytics, Integrations Development, Advanced Product
+        Reporting, and Business Intelligence teams.
       </p>
       <p className="mb-8">
         I'm an avid Sci-fi reader and a coffee enthusiast - send me all your
