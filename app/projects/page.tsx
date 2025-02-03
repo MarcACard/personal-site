@@ -42,7 +42,10 @@ export default function Page() {
             <div className="flex justify-between items-center mb-2">
               <h2 className="text-xl font-semibold">{project.name}</h2>
               <div className="flex gap-2">
-                <div>{project.status}</div>
+                <div className="flex items-center gap-2">
+                  <div className="size-3 bg-yellow-500 rounded-full animate-pulse" />
+                  <span>{project.status}</span>
+                </div>
                 <div>|</div>
                 <div>{project.year}</div>
               </div>
