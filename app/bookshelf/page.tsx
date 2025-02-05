@@ -29,21 +29,21 @@ export default function Page() {
         {books.map((book, index) => (
           <div
             key={index}
-            className="grid grid-cols-1 sm:grid-cols-[2fr_1fr_1fr_.75fr] sm:gap-2 md:gap-1 mb-4 items-center"
+            className="grid grid-cols-1 sm:grid-cols-[1.75fr_1.25fr_.75fr_.75fr] sm:gap-4 mb-2 items-center text-sm"
           >
-            <span className="font-medium">{book.title}</span>
-            <span>{book.author}</span>
+            <span className="font-medium line-clamp-1">{book.title}</span>
+            <span className="line-clamp-1">{book.author}</span>
             {book.dateCompleted ? (
               <span>{book.dateCompleted}</span>
             ) : (
               <span className="italic">{book.status}</span>
             )}
-            <div className="flex">
+            <div className="flex items-center h-full">
               {typeof book.rating === "number" &&
                 Array.from({ length: book.rating }).map((_, i) => (
                   <Star
                     key={i}
-                    className="size-4 fill-yellow-500 stroke-yellow-500"
+                    className="size-4 fill-yellow-400 stroke-none"
                   />
                 ))}
             </div>
