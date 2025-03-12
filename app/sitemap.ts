@@ -1,6 +1,6 @@
 import { getBlogPosts } from 'app/writing/utils'
 
-export const baseUrl = 'https://marcacard.com'
+export const baseUrl = 'https://www.marcacard.com'
 
 export default async function sitemap() {
   let blogs = getBlogPosts().map((post) => ({
