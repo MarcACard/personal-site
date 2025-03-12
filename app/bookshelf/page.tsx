@@ -9,7 +9,7 @@ export const metadata = {
 export default function Page() {
   return (
     <section>
-      <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
+      <h1 className="font-semibold text-2xl mb-8 tracking-tighter dark:text-zinc-50">
         My Bookshelf
       </h1>
       <div className="mb-10">
