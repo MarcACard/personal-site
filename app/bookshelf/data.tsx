@@ -20,6 +20,13 @@ export const books: Book[] = [
     status: "In Progress",
   },
   {
+    title: "Saturn Run",
+    author: "John Sandfor, Ctein",
+    status: "Completed",
+    dateCompleted: "2025-03-13",
+    rating: 2,
+  },
+  {
     title: "The Joy Luck Club",
     author: "Amy Tan",
     status: "Completed",
