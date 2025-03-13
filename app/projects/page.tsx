@@ -1,9 +1,35 @@
+import { cn } from "../../lib/utils";
+
 export const metadata = {
   title: "Projects",
   description: "",
 };
 
 const projects = [
+  {
+    id: "promptcache",
+    name: "📔 PromptCache",
+    version: "0.1.0",
+    url: "https://www.promptcache.ai/?ref=marcacard.com",
+    githubUrl: "https://github.com/MarcACard/promptcache",
+    description:
+      "PromptCache is a browser extension that lets you save, organize, and reuse AI prompts with one click.",
+    status: "Live",
+    firstLaunched: "March 2025",
+    tags: [],
+  },
+  {
+    id: "playlistpreserve",
+    name: "🎶 Playlist Preserve",
+    version: "",
+    url: "",
+    githubUrl: "",
+    description:
+      "A web app that tracks and archives changes to Spotify's curated playlists, preserving weekly updates like Discover Weekly and Release Radar.",
+    status: "WIP",
+    firstLaunched: "",
+    tags: [],
+  },
   {
     id: "polybranch",
     name: "🌳 PolyBranch",
@@ -12,20 +38,8 @@ const projects = [
     repo: "",
     description:
       "An experimental AI chat interface that visualizes conversations as trees, letting you branch chats, manage context, and switch between AI models seamlessly.",
-    status: "In Progress",
-    year: 2025,
-    tags: [],
-  },
-  {
-    id: "promptcache",
-    name: "📔 PromptCache",
-    version: "",
-    url: "",
-    githubUrl: "",
-    description:
-      "A web extension to store and access your prompts across different chat applications, all from your browser.",
-    status: "In Progress",
-    year: 2025,
+    status: "WIP",
+    firstLaunched: "",
     tags: [],
   },
 ];
@@ -38,16 +52,27 @@ export default function Page() {
       </h1>
       {projects.length > 0 &&
         projects.map((project) => (
-          <div key={project.id} className="p-2 mb-5">
+          <div key={project.id} className="mb-5">
             <div className="flex justify-between items-center mb-2">
               <h2 className="text-xl font-semibold">{project.name}</h2>
               <div className="flex gap-2">
                 <div className="flex items-center gap-2">
-                  <div className="size-3 bg-yellow-500 rounded-full animate-pulse" />
-                  <span>{project.status}</span>
+                  <div
+                    className={cn(
+                      "size-3 rounded-full",
+                      project.status == "WIP"
+                        ? "bg-yellow-400 animate-pulse"
+                        : "bg-green-500"
+                    )}
+                  />
+                  <span className="font-medium">{project.status}</span>
                 </div>
-                <div>|</div>
-                <div>{project.year}</div>
+                {project.version && (
+                  <>
+                    <div>|</div>
+                    <div>v{project.version}</div>
+                  </>
+                )}
               </div>
             </div>
             <div>
