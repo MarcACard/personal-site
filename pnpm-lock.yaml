@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@icons-pack/react-simple-icons':
+        specifier: ^12.3.0
+        version: 12.3.0(react@18.2.0)
       '@tailwindcss/postcss':
         specifier: 4.0.0-alpha.13
         version: 4.0.0-alpha.13(postcss@8.5.1)
@@ -67,6 +70,11 @@ importers:
         version: 5.3.3
 
 packages:
+
+  '@icons-pack/react-simple-icons@12.3.0':
+    resolution: {integrity: sha512-71KKdd2tg36Pctg5pQTAmPRIdFrtxsLccoSexkZLztn46eV6Ek6ov69o0Ph4t4ZPs6n4+Fw4sBnIzEsKssnXxg==}
+    peerDependencies:
+      react: ^16.13 || ^17 || ^18 || ^19
 
   '@mdx-js/mdx@2.3.0':
     resolution: {integrity: sha512-jLuwRlz8DQfQNiUCJR50Y09CGPq3fLtmtUQfVrj79E0JWu3dvsVcxVIcfhR5h0iXu+/z++zDrYeiJqifRynJkA==}
@@ -1035,6 +1043,10 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
 snapshots:
+
+  '@icons-pack/react-simple-icons@12.3.0(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
 
   '@mdx-js/mdx@2.3.0':
     dependencies:

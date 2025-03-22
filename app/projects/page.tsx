@@ -1,8 +1,10 @@
+import { SiGithub } from "@icons-pack/react-simple-icons";
+import { Globe } from "lucide-react";
 import { cn } from "../../lib/utils";
 
 export const metadata = {
   title: "Projects",
-  description: "",
+  description: "Explore projects by Marc Anthony Card, including AI tools, browser extensions, and web apps like PromptCache, Playlist Preserve, and PolyBranch.",
 };
 
 const projects = [
@@ -23,7 +25,7 @@ const projects = [
     name: "🎶 Playlist Preserve",
     version: "",
     url: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/MarcACard/playlist-preserve",
     description:
       "A web app that tracks and archives changes to Spotify's curated playlists, preserving weekly updates like Discover Weekly and Release Radar.",
     status: "WIP",
@@ -34,7 +36,7 @@ const projects = [
     id: "polybranch",
     name: "🌳 PolyBranch",
     version: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/MarcACard/polybranch",
     repo: "",
     description:
       "An experimental AI chat interface that visualizes conversations as trees, letting you branch chats, manage context, and switch between AI models seamlessly.",
@@ -54,7 +56,27 @@ export default function Page() {
         projects.map((project) => (
           <div key={project.id} className="mb-5">
             <div className="flex justify-between items-center mb-2">
-              <h2 className="text-xl font-semibold">{project.name}</h2>
+              <div className="flex items-center gap-4">
+                <h2 className="text-xl font-semibold">{project.name}</h2>
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    className="hover:scale-[1.1] tranform"
+                  >
+                    <SiGithub className="size-5" />
+                  </a>
+                )}
+                {project.url && (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    className="hover:scale-[1.1] tranform"
+                  >
+                    <Globe className="size-5" />
+                  </a>
+                )}
+              </div>
               <div className="flex gap-2">
                 <div className="flex items-center gap-2">
                   <div
