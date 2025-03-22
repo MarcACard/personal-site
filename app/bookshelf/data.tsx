@@ -18,6 +18,8 @@ export const books: Book[] = [
     title: "There Is No Antimemetics Division",
     author: "qntm",
     status: "In Progress",
+    dateCompleted: "2025-03-22",
+    rating: 4
   },
   {
     title: "Saturn Run",
