@@ -10,6 +10,11 @@ type Book = {
 
 export const books: Book[] = [
   {
+    title: "Liftoff: Elon Musk and the Desperate Early Days That Launched SpaceX",
+    author: "Eric Berger",
+    status: "In Progress",
+  },
+  {
     title: "Howling Dark",
     author: "Christopher Ruocchio",
     status: "In Progress",
