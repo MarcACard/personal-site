@@ -20,9 +20,16 @@ export const books: Book[] = [
     status: "In Progress",
   },
   {
+    title: "The Last Question",
+    author: "Isaac Asimov",
+    status: "Completed",
+    dateCompleted: "2025-04-04"
+    rating: 2
+  },
+  {
     title: "There Is No Antimemetics Division",
     author: "qntm",
-    status: "In Progress",
+    status: "Completed",
     dateCompleted: "2025-03-22",
     rating: 4
   },
