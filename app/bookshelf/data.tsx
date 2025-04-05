@@ -23,7 +23,7 @@ export const books: Book[] = [
     title: "The Last Question",
     author: "Isaac Asimov",
     status: "Completed",
-    dateCompleted: "2025-04-04"
+    dateCompleted: "2025-04-04",
     rating: 2
   },
   {
