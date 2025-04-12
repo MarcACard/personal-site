@@ -11,7 +11,7 @@ const projects = [
   {
     id: "promptcache",
     name: "📔 PromptCache",
-    version: "0.1.0",
+    version: "0.2.0",
     url: "https://www.promptcache.ai/?ref=marcacard.com",
     githubUrl: "https://github.com/MarcACard/promptcache",
     description:
