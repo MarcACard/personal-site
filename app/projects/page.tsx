@@ -27,7 +27,7 @@ const projects = [
     url: "",
     githubUrl: "https://github.com/MarcACard/playlist-preserve",
     description:
-      "A web app that tracks and archives changes to Spotify's curated playlists, preserving weekly updates like Discover Weekly and Release Radar.",
+      "A web app that automatically snapshots Apple Music playlists—official and personal—enabling users to track changes over time and never loose track of a song again.",
     status: "WIP",
     firstLaunched: "",
     tags: [],
