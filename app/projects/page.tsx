@@ -24,7 +24,7 @@ const projects = [
     id: "playlistpreserve",
     name: "🎶 Playlist Preserve",
     version: "",
-    url: "",
+    url: "https://www.playlistpreserve.com/?ref=marcacard.com",
     githubUrl: "https://github.com/MarcACard/playlist-preserve",
     description:
       "A web app that automatically snapshots Apple Music playlists—official and personal—enabling users to track changes over time and never loose track of a song again.",
