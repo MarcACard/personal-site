@@ -10,12 +10,8 @@ type Book = {
 
 export const books: Book[] = [
   {
-    title: "The Will of the Many",
-    author: "James Islington",
-    status: "In Progress",
-  },
-  {
-    title: "Liftoff: Elon Musk and the Desperate Early Days That Launched SpaceX",
+    title:
+      "Liftoff: Elon Musk and the Desperate Early Days That Launched SpaceX",
     author: "Eric Berger",
     status: "In Progress",
   },
@@ -25,18 +21,25 @@ export const books: Book[] = [
     status: "In Progress",
   },
   {
+    title: "The Will of the Many",
+    author: "James Islington",
+    status: "Completed",
+    dateCompleted: "2025-04-30",
+    rating: 4,
+  },
+  {
     title: "The Last Question",
     author: "Isaac Asimov",
     status: "Completed",
     dateCompleted: "2025-04-04",
-    rating: 2
+    rating: 2,
   },
   {
     title: "There Is No Antimemetics Division",
     author: "qntm",
     status: "Completed",
     dateCompleted: "2025-03-22",
-    rating: 4
+    rating: 4,
   },
   {
     title: "Saturn Run",
