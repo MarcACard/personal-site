@@ -12,7 +12,7 @@ export default function Page() {
         building what piques my curiosity.
       </p>
       <p className="mb-4">
-        Right now I'm focus on{" "}
+        Right now I'm focusing on{" "}
         <a
           className="underline"
           href="https://www.rubiehq.com/"
