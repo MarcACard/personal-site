@@ -7,9 +7,21 @@ export default function Page() {
         Marc Anthony Card
       </h1>
       <p className="mb-4">
-        I'm a developer living in Brooklyn, NY 🗽. Currently diving into{" "}
+        I'm a developer living in Brooklyn, NY 🗽. Frequently diving into{" "}
         <span className="line-through">rabbit holes</span> black holes and
         building what piques my curiosity.
+      </p>
+      <p className="mb-4">
+        Right now I'm focus on{" "}
+        <a
+          className="underline"
+          href="https://www.rubiehq.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Rubie
+        </a>
+        , where we're building software to simplify data migrations with agentic workflows.
       </p>
       <p className="mb-4">
         Previously, I served as VP of Product Technology &amp; Integrations at{" "}
