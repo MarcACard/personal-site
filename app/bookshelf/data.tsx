@@ -21,6 +21,13 @@ export const books: Book[] = [
     status: "In Progress",
   },
   {
+    title: "The Shackleton Signal",
+    author: "Joshua T. Calvert",
+    status: "Completed",
+    dateCompleted: "2025-11-26",
+    rating: 3,
+  },
+  {
     title: "The Will of the Many",
     author: "James Islington",
     status: "Completed",
